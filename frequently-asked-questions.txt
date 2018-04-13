@@ -1,0 +1,9 @@
+This file helps me to remember some things, like when I feel impatient and want to
+switch to more complex tools.
+
+Q: Why do I use gedit?
+A: "If a programmer tells you to use vim or emacs, just say “no.” These editors are for when you are a
+better programmer. All you need right now is an editor that lets you put text into a fi le. We will
+use gedit, TextWrangler, or Notepad++ (from now on called “the text editor” or “a text editor”)
+because it is simple and the same on all computers. Professional programmers use these text edi-
+tors, so it’s good enough for you starting out." 
