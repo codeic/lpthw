@@ -79,4 +79,4 @@ txt_again.close()
     # undesirable effect?
     # In general, this is a bad thing to do.
     # However, file objects go out of their way to make it safe. It's 
-    # an error to do anything to a closed file—except to close it again.
+    # an error to do anything to a closed file—except to close it again."
