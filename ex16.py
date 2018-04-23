@@ -14,7 +14,7 @@ print "Opening the file..."
 target = open(filename, 'w')
 
 print "Truncating the file. Goodbye!"
-target.truncate()
+#target.truncate()
 
 print "Now I'm going to ask you for three lines."
 
@@ -24,7 +24,7 @@ line3 = raw_input("line 3: ")
 
 print "I'm going to write these to the file."
 
-target.write(line1 + "\n" + line2 + "\n" + line3)
+target.write("%r\n%r\n%r\n" % (line1, line2, line3)
 
 # target.write(line1)
 # target.write("\n")
@@ -56,13 +56,31 @@ that's not the point anyway....
 # 3. There’s too much repetition in this file. Use strings, formats, 
 # and escapes to print out line1, line2, and line3 with just one 
 # target.write() command instead of six.
-    # A: It took me nearly a half an hour to figure this out. I didn't
-    # used formats, though.
-
+    # A: Contemplating this took me more than an hour. I tried:
+    # target.write(line1 + "\n" + line2 + "\n" + line3)
+    # but that is without formats. Then I tried:
+    # print "I'm going to write these to the file.%r" % target.write    
+    # (line1 + "\n" + line2 + "\n" + line3)
+    # which is overcomplicated and produces 'None' after running the 
+    # script (but it does write to the file). Neither output 'None',
+    # how the script worked or when (and why) should I use formats
+    # is understandable to me.
+    # So I gave up, googled some, and found great answer at SO
+    # (https://stackoverflow.com/a/8691360/4455055).
+    
 # 4. Find out why we had to pass a 'w' as an extra parameter to open. 
 # Hint: open tries to be safe by making you explicitly say you want to 
 # write a file.
+    # A: If we didn't specified 'w' mode, then it fould fall back to
+    # default reading mode ('a'). From documentation on file class:
+    # "The mode can be 'r', 'w' or 'a' for reading (default), writing 
+    # or appending."
 
-# 5. If you open the fi le with 'w' mode, then do you really need the 
+# 5. If you open the file with 'w' mode, then do you really need the 
 # target.truncate()? Go read the docs for Python’s open function and 
 # see if that’s true.
+    # A: Reading documentation I came to this conclusion: Python opens
+    # the file with 'w' mode, then it leaves it open, which is why
+    # I got "invalid syntax" errors when tried removing truncate.
+    # Since 'w' mode does truncate the file, but leaves it open,
+    # I need to use 'truncate' method to keep file open.
