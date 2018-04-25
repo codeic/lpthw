@@ -11,7 +11,7 @@ print "Copying from %s to %s" % (from_file, to_file)
 # in_file = open(from_file)
 # indata = in_file.read()
     # A:
-indata = in_file.open(from_file).read()
+indata = open(from_file).read()
 
 print "The input file is %d bytes long" % len(indata)
 
@@ -25,12 +25,16 @@ out_file.write(indata)
 print "Alright, all done."
 
 out_file.close()
-in_file.close()
+
+# Commented out, because there was no need for it anymore.
+# in_file.close()
 
 # Study Drills
 # 1. Go read up on Python’s import statement, and start python to try 
 # it out. Try importing some things and see if you can get it right. 
 # It’s alright if you do not.
+print "Hash value of input file is: %d" % hash(indata)
+rename(test.txt, test1.txt)
 
 # 2. This script is really annoying. There’s no need to ask you before 
 # doing the copy, and it prints too much out to the screen. Try to make 
