@@ -2,10 +2,11 @@
 
 from sys import argv
 from os.path import exists
+from os import rename
 
 script, from_file, to_file = argv
 
-print "Copying from %s to %s" % (from_file, to_file)
+# print "Copying from %s to %s" % (from_file, to_file)
 
 # we could do these two on one line too, how?
 # in_file = open(from_file)
@@ -13,7 +14,7 @@ print "Copying from %s to %s" % (from_file, to_file)
     # A:
 indata = open(from_file).read()
 
-print "The input file is %d bytes long" % len(indata)
+# print "The input file is %d bytes long" % len(indata)
 
 print "Does the output file exist? %r" % exists(to_file)
 print "Ready, hit RETURN to continue, CTRL-C to abort."
@@ -22,7 +23,7 @@ raw_input()
 out_file = open(to_file, 'w')
 out_file.write(indata)
 
-print "Alright, all done."
+# print "Alright, all done."
 
 out_file.close()
 
@@ -33,8 +34,20 @@ out_file.close()
 # 1. Go read up on Python’s import statement, and start python to try 
 # it out. Try importing some things and see if you can get it right. 
 # It’s alright if you do not.
+    # A: My first attempt was
+    # import os
+    # and command was
+    # os.rename(src, dst)
+    # and then I tried to find out the difference between these two ways
+    # of importing and stumbled upon this:
+    # https://stackoverflow.com/questions/710551/
+    # then tried to import it like this.
+    # Main difference I can find (and important to me, at this moment)
+    # is that whit this way you don't need to type
+    # os.rename
+rename("test.txt", "test1.txt")
+    # I also tried with one built-in 
 print "Hash value of input file is: %d" % hash(indata)
-rename(test.txt, test1.txt)
 
 # 2. This script is really annoying. There’s no need to ask you before 
 # doing the copy, and it prints too much out to the screen. Try to make 
@@ -42,6 +55,7 @@ rename(test.txt, test1.txt)
 
 # 3. See how short you can make the script. I could make this one line 
 # long.
+    # A: My attempt is written in ex17v2.py.
 
 # 4. Notice at the end of the WYSS I used something called cat? It’s an 
 # old command that “concatenates” fi les together, but mostly it’s just 
