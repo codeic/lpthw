@@ -66,3 +66,14 @@ print "Hash value of input file is: %d" % hash(indata)
 # have. Do not worry about man since there is nothing like that.
 
 # 6. Find out why you had to do output.close() in the code.
+    # A: First, I found this: 
+    # https://stackoverflow.com/questions/8995523/
+    # And then, by googling "leak file descriptors", found this blog:
+    # https://martin-ueding.de/articles/c-file-descriptors/index.html
+    # Which I ran and got the same result. Then I realized that I 
+    # don't know what 'file descriptors' are. Wikipedia says:
+    # "In Unix and related computer operating systems, a file 
+    # descriptor (FD, less frequently fildes) is an abstract indicator 
+    # (handle) used to access a file or other input/output resource, 
+    # such as a pipe or network socket."
+    # https://www.wikiwand.com/en/File_descriptor
