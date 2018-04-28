@@ -1,10 +1,6 @@
-indata = open("test.txt").read()
-
-out_file = open("test.txt").read()
-
-"new_file.txt", "w")
-out_file.write(indata)
-
+indata = open("test.txt").read() ;
+out_file = open("new_file.txt", "w") ;
+out_file.write(indata) ;
 out_file.close()
 
 
@@ -22,10 +18,7 @@ out_file.close()
     #     out_file.close()
     # AttributeError: 'NoneType' object has no attribute 'close'
         # Defaulted. 
-        
-        
-        
-        
-        Wrote comments about what of remaing lines does,
-        # to make it easier to understand steps.
 
+    # Mistakes were made while I was trying to make a one-liner. I think
+    # it can not be one using without using other elements or
+    # complicating it further.

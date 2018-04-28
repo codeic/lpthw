@@ -59,7 +59,7 @@ print "Hash value of input file is: %d" % hash(indata)
 
 # 4. Notice at the end of the WYSS I used something called cat? It’s an 
 # old command that “concatenates” fi les together, but mostly it’s just 
-# an easy way to print a fi le to the screen. Type man cat to read 
+# an easy way to print a file to the screen. Type man cat to read 
 # about it.
 
 # 5. Windows people, find the alternative to cat that Linux/OSX people 

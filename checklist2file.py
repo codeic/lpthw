@@ -1,6 +1,8 @@
-This is a test file.
-This is a test file, take 2.
-checklist.txt
+# -*- coding: utf-8
+
+with open(raw_input(), "a") as checklist:
+    checklist.write(
+    """
     
 # [] 1. Did you start your function definition with def?
 
@@ -34,3 +36,4 @@ checklist.txt
 # by commas?
 
 # [] 4. Did you end the function call with a ) character?)
+""")
