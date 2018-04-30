@@ -1,13 +1,4 @@
-# -*- coding: utf-8
 
-# From the book:
-# "Write out a function checklist for later exercises. Write these on 
-# an index card and keep it by you while you complete the rest of these 
-# exercises or until you feel you do not need it."
-
-with open(raw_input("Filename: "), "a") as checklist:
-    checklist.write(
-    """
     
 # [] 1. Did you start your function definition with def?
 
@@ -42,4 +33,3 @@ with open(raw_input("Filename: "), "a") as checklist:
 # by commas?
 
 # [] 4. Did you end the function call with a ) character?)
-""")

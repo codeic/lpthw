@@ -1,14 +1,30 @@
 # -*- coding: utf-8 -*-
 
-# Interesting notes from Web (https://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/variables.html) about variable assignments:
+# Interesting notes from Web (https://anh.cs.luc.edu/python/hands-
+# on/3.1/handsonHtml/variables.html) about variable assignments:
 
 # Try
 # width = 10
-# Nothing is displayed by the interpreter after this entry, so it is not clear anything happened. Something has happened. This is an assignment statement, with a variable, width, on the left. A variable is a name for a value. An assignment statement associates a variable name on the left of the equal sign with the value of an expression calculated from the right of the equal sign. Enter
+# Nothing is displayed by the interpreter after this entry, so it is 
+# not clear anything happened. Something has happened. This is an 
+# assignment statement, with a variable, width, on the left. A variable 
+# is a name for a value. An assignment statement associates a variable 
+# name on the left of the equal sign with the value of an expression 
+# calculated from the right of the equal sign. Enter
 # width
-# Once a variable is assigned a value, the variable can be used in place of that value. The response to the expression width is the same as if its value had been entered.
+# Once a variable is assigned a value, the variable can be used in 
+# place of that value. The response to the expression width is the same 
+# as if its value had been entered.
 
-# The equal sign is an unfortunate choice of symbol for assignment, since Python’s usage is not the mathematical usage of the equal sign. If the symbol ↤ had appeared on keyboards in the early 1990’s, it would probably have been used for assignment instead of =, emphasizing the asymmetry of assignment. In mathematics an equation is an assertion that both sides of the equal sign are already, in fact, equal. A Python assignment statement forces the variable on the left hand side to become associated with the value of the expression on the right side. 
+# The equal sign is an unfortunate choice of symbol for assignment, 
+# since Python’s usage is not the mathematical usage of the equal sign. 
+# If the symbol ↤ had appeared on keyboards in the early 1990’s, it 
+# would probably have been used for assignment instead of =, 
+# emphasizing the asymmetry of assignment. In mathematics an equation 
+# is an assertion that both sides of the equal sign are already, in 
+# fact, equal. A Python assignment statement forces the variable on the 
+# left hand side to become associated with the value of the expression 
+# on the right side. 
 
 
 
