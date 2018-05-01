@@ -40,7 +40,18 @@ print "And we can combine the two, variables and math:"
 # This line assigns parameters to a function and does math, again.
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 
-def x(y, z):
+def foo(bat, cat):
+    print "What about %r and %r?\n" % (bat, cat)
+    
+foo("Catman", "Batwoman")
+
+x = "Catwoman in red"
+y = "Batman in orange"
+foo(x, y)
+
+
+
+
 
 # Study Drills
 
@@ -50,8 +61,27 @@ def x(y, z):
 # 2. Start at the bottom and read each line backward, saying all the 
 # important characters.
 
-# 3. Write at least one more function of your own design, and run it 10 
-# different ways.
+# 3. Write at least one more function of your own design, and run it 
+# 10 different ways.
+    # A:
+def foo(bat, cat):
+    print "What about %r and %r?\n" % (bat, cat)
+
+# 1)    
+foo("Catman", "Batwoman")
+
+# 2)
+x = "Catwoman in red"
+y = "Batman in orange"
+foo(x, y)
+
+# 3)
+funny_word_1 = raw_input("Please insert a funny word: ")
+funny_word_2 = raw_input("Please insert another funny word: ")
+foo(funny_word_1, funny_word_2)
+
+# 4)
+
 
     
 # [] 1. Did you start your function definition with def?
