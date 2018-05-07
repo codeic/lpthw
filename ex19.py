@@ -40,18 +40,6 @@ print "And we can combine the two, variables and math:"
 # This line assigns parameters to a function and does math, again.
 cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 
-def foo(bat, cat):
-    print "What about %r and %r?\n" % (bat, cat)
-    
-foo("Catman", "Batwoman")
-
-x = "Catwoman in red"
-y = "Batman in orange"
-foo(x, y)
-
-
-
-
 
 # Study Drills
 
@@ -64,24 +52,27 @@ foo(x, y)
 # 3. Write at least one more function of your own design, and run it 
 # 10 different ways.
     # A:
-def foo(bat, cat):
-    print "What about %r and %r?\n" % (bat, cat)
+def foo(x, y):
+    print "First: %r!" % x
+    print "Second %r!" % y
+    print "Now both: %r %r!" % (x, y)
 
 # 1)    
-foo("Catman", "Batwoman")
+#foo("Batman", "Catwoman")
 
 # 2)
-x = "Catwoman in red"
-y = "Batman in orange"
-foo(x, y)
+#x = "Catwoman in red"
+#y = "Batman in orange"
+#foo(x, y)
 
 # 3)
-funny_word_1 = raw_input("Please insert a funny word: ")
-funny_word_2 = raw_input("Please insert another funny word: ")
-foo(funny_word_1, funny_word_2)
+#funny_word_1 = raw_input("Please insert a funny word: ")
+#funny_word_2 = raw_input("Please insert another funny word: ")
+#foo(funny_word_1, funny_word_2)
 
 # 4)
-
+target = open(raw_input("Insert the filename: "), 'a')
+target.write(str(foo("Bitcoin", "Litecoin")))
 
     
 # [] 1. Did you start your function definition with def?
