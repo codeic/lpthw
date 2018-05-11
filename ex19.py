@@ -52,28 +52,42 @@ cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 # 3. Write at least one more function of your own design, and run it 
 # 10 different ways.
     # A:
+    
+# For this drill, I found massive help over at this blog:
+# https://www.josharcher.uk/code/lpthw-exercise-19-functions-variables/
+
+
+# These three lines consists out of three variables. Each assigns
+# value in a form of collored sentence.
+first_q = "\033[91m" + "Can you explain me what %s%s is?" + "\033[0m"
+second_q = "\033[91m" + "What's the usage of %r?" + "\033[0m"
+third_q = "\033[91m" + "%s is more than $%d worth\
+now over at exchanges."  + "\033[0m"
+
 def foo(x, y):
-    print "First: %r!" % x
-    print "Second %r!" % y
-    print "Now both: %r %r!" % (x, y)
+    print  first_q % (x, y)\
 
-# 1)    
-#foo("Batman", "Catwoman")
 
-# 2)
-#x = "Catwoman in red"
-#y = "Batman in orange"
-#foo(x, y)
+# 1) With arguments
+foo("Bit", "coin")
 
-# 3)
-#funny_word_1 = raw_input("Please insert a funny word: ")
-#funny_word_2 = raw_input("Please insert another funny word: ")
-#foo(funny_word_1, funny_word_2)
+# 2) With variables passed as arguments
+x = "Lite"
+y = "coin"
+foo(x, y)
 
-# 4)
-target = open(raw_input("Insert the filename: "), 'a')
-target.write(str(foo("Bitcoin", "Litecoin")))
+# 3) With user input
+random_word = raw_input("Type some random word: ")
+foo(random_word, y)
+print "P.S. Try searching the result over at cryptomarketcap.com, \
+that coin may really exist."
 
+# 4) Combined with another function
+def bar():
+    print third_q % (foo, 11)
+
+bar()
+    
     
 # [] 1. Did you start your function definition with def?
 
