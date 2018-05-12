@@ -59,66 +59,41 @@ cheese_and_crackers(amount_of_cheese + 100, amount_of_crackers + 1000)
 
 # These three lines consists out of three variables. Each assigns
 # value in a form of collored sentence.
-first_q = "\033[91m" + "Can you explain me what %s%s is?" + "\033[0m"
+first_q = "\033[91m" + "I've heard there are many 'coins', not only \
+Bitcoin. Can you explain me what %s%s is?" + "\033[0m"
 second_q = "\033[91m" + "What's the usage of %r?" + "\033[0m"
-third_q = "\033[91m" + "%s is more than $%d worth\
-now over at exchanges."  + "\033[0m"
+third_q = "\033[91m" + "%s is more than $%d worth \
+now over at exchanges.\n" + "\033[0m"
 
-def foo(x, y):
-    print  first_q % (x, y)\
+def foo(x, y, z):
+    print first_q % (x, y)
+    print second_q % (x + y)
+    print third_q % (x + y, z)
 
 
 # 1) With arguments
-foo("Bit", "coin")
+foo("Dark", "coin", 11)
 
 # 2) With variables passed as arguments
 x = "Lite"
 y = "coin"
-foo(x, y)
+z = 22
+foo(x, y, z)
 
 # 3) With user input
 random_word = raw_input("Type some random word: ")
-foo(random_word, y)
-print "P.S. Try searching the result over at cryptomarketcap.com, \
-that coin may really exist."
+foo(random_word, y, 33)
+print "\033[91m" +  "P.S. Try searching the result over at cryptomarketcap.com, \
+that coin may really exist\n" + "\033[0m"
 
-# 4) Combined with another function
+# 4) Inside another function
 def bar():
-    print third_q % (foo, 11)
-
+    foo(random_word, y, 44)
 bar()
-    
-    
-# [] 1. Did you start your function definition with def?
 
-# [] 2. Does your function name have only characters and _ 
-# (underscore) characters?
+# 5) Using math
+foo(x, y, z + 1000)
 
-# [] 3. Did you put an open parenthesis (right after the function name?
+# 6) Assigning function to a variable
+crypto = foo("Bit", y + " Cash", z + 850)
 
-# [] 4. Did you put your arguments after the parenthesis (separated by 
-# commas?
-
-# [] 5. Did you make each argument unique (meaning no duplicated 
-# names)?
-
-# [] 6. Did you put a close parenthesis and a colon ): after the 
-# arguments?
-
-# [] 7. Did you indent all lines of code you want in the function four 
-# spaces? No more, no less.
-
-# [] 8. Did you “end” your function by going back to writing with no 
-# indent (dedenting we call it)?
-
-
-# And when you run (“use” or “call”) a function, check these things:
-
-# [] 1. Did you call/use/run this function by typing its name?
-
-# [] 2. Did you put the ( character after the name to run it?
-
-# [] 3. Did you put the values you want into the parenthesis separated 
-# by commas?
-
-# [] 4. Did you end the function call with a ) character?)
