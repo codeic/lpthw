@@ -96,4 +96,3 @@ foo(x, y, z + 1000)
 
 # 6) Assigning function to a variable
 crypto = foo("Bit", y + " Cash", z + 850)
-
