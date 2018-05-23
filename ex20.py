@@ -6,8 +6,8 @@ from sys import argv
 # second is a input file, 'test.txt' in this case.
 script, input_file = argv
 
-# This line defines function with one parameter. This function is
-# is inteded 
+# This line defines function with one parameter. The function is
+# is inteded to print contents of the parameter after reading it.
 def print_all(f):
 # This line reads value given to parameter and prints it out.
     print f.read()
