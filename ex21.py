@@ -64,11 +64,28 @@ print egg()
 # you can see the results. What you should do is try to figure out the 
 # normal formula that would recreate this same set of operations.
     # A:
-print iq * 2
+print 35 + (74 - (180 * (50 / 2)))
 
 # 3. Once you have the formula worked out for the puzzle, get in there 
 # and see what happens when you modify the parts of the functions. Try 
 # to change it on purpose to make another value.
+    # A:
+what2 = add(age, divide(height, subtract(weight, multiply(iq, 2))))
+
+print "This happens when ", what, " is messed with: ", what2
 
 # 4. Finally, do the inverse. Write out a simple formula and use the 
 # functions in the same way to calculate it.
+    # Mistake 1:
+        # I forgot to type in matching brackets, two of them. I got
+        # confusing error message:
+            #   File "ex21.py", line 83
+            #
+            #                                                  ^
+            #SyntaxError: invalid syntax
+        # which gave me nothing logical to go from. Five minutes later
+        # I accidentally figured it out.
+    # A:
+# 0 / (254016 + (299792458 * (1 + 1)))
+what3 = divide(0, add(254016, multiply(299792458, subtract(1, 1))))
+print "Eventually, it all comes back to ", what3, ", simple as that."
