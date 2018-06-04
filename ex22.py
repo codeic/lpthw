@@ -16,45 +16,45 @@ print "Pressing enter after every output will move you to the next one."
 
 c("print()", "A statement. Prints out given arguments to the STDOUT.")
 
-c("\"", "A double quote. Encapsulates text given between two of them.")
+c("\"", "A double quote. Encapsulates text, if given, between two of\
+    them forming a string.")
 
-c("\'", "A single quote. Encapsulates text given between two of them.")
+c("\'", "A single quote. Encapsulates text, if given, between two of\
+    them forming a string.")
 
 c("#", "A hash sign. Text written after it is ignored.")
 
-c("(", "PLACEHOLDER")
+c("()", "A pair of brackets. Encapsulates text, if given, between two\
+    of them. It serves as a place for parameters for a function.")
 
-c(")", "PLACEHOLDER")
+c(",", "A comma. Divides parameters.")
 
-c(",", "PLACEHOLDER")
+c("round()", "Function. Returns a floating point number.")
 
-c("round()", "PLACEHOLDER")
+c("+", "A plus sign. Sums numbers.")
 
-c("+", "PLACEHOLDER")
+c("-", "A minus sign. Subtracts numbers.")
 
-c("-", "PLACEHOLDER")
+c("*", "Shiny star. Sits on the night sky when it doesn't multiply numbers.")
 
-c("*", "PLACEHOLDER")
+c("/", "A forward slash. Divides numbers.")
 
-c("/", "PLACEHOLDER")
+c("True", "A Boolean value. Returns itself when statement is true.")
 
-c("True", "PLACEHOLDER")
+c("False", "A Boolean value. Returns itself when statement is not true.")
 
-c("False", "PLACEHOLDER")
+c(">", "Greather-than sign. It shows what its name says.")
 
-c(">", "PLACEHOLDER")
+c("<", "Less-than sign. It shows what its name says.")
 
-c(">-", "PLACEHOLDER")
+c(">=", "Less-than or equal sign. It shows what its name says.")
 
-c(">=-", "PLACEHOLDER")
+c("_", "An underscore. Serves as divider between words inside the name of a\
+    function or variable.")
 
-c(">=-", "PLACEHOLDER")
+c("%s", "A formatting syntax. Returns given value as string.")
 
-c("_", "PLACEHOLDER")
-
-c("%s", "PLACEHOLDER")
-
-c("%r", "PLACEHOLDER")
+c("%r", "A formatting syntax. Returns given value as string."
 
 c("%d", "PLACEHOLDER")
 
@@ -62,13 +62,13 @@ c("%", "PLACEHOLDER")
 
 c("# -*- coding: utf-8 -*-", "PLACEHOLDER")
 
-c("=", "PLACEHOLDER")
+c("=", "The equal sign. Passes value on to a variable.")
 
-c("\"\"\"", "PLACEHOLDER")
+c("\"\"\"", "A PLACEHOLDER")
 
 c("\\", "PLACEHOLDER")
 
-c("=", "PLACEHOLDER")
+c("==", "PLACEHOLDER")
 
 c("\\n", "PLACEHOLDER")
 
