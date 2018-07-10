@@ -25,8 +25,8 @@ def secret_formula(started):
     return jelly_beans, jars, crates
 
 start_point = 10000
-# I am trying to figure this out. So, values right from the '=' sign are going
-# into function on the right side as its values. 
+# This part was confusing a bit, but SO clarified it significantly:
+# https://stackoverflow.com/a/30165240/4455055
 beans, jars, crates = secret_formula(start_point)
 
 print "With a starting point of: %d" % start_point
