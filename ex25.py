@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 def break_words(stuff):
     """This function will break up words for us."""
     words = stuff.split(' ')
@@ -74,6 +76,13 @@ def print_first_and_last_sorted(sentence):
 # 1. Take the remaining lines of the WYSS output and figure out what they are 
 # doing. Make sure you understand how you are running your functions in the 
 # ex25 module.
+    # A:
+    # I was wandering why there are no first and last words after on the line
+    # 22, and I found this explanations about pop():
+    # "Remove the item at the given position in the list, and return it. 
+    # If no index is specified, a.pop() removes and returns the last item 
+    # in the list."
+    # https://docs.python.org/2/tutorial/datastructures.html
 
 # 2. Try doing this: help(ex25) and also help(ex25.break_words). 
 # Notice how you get help for your module and how the help is those odd """ 
@@ -85,6 +94,6 @@ def print_first_and_last_sorted(sentence):
 # Programmers like saying things backward. Start a new session and see how all 
 # your functions are right there.
 
-# 4. Try breaking your fi le and see what it looks like in Python when you 
+# 4. Try breaking your file and see what it looks like in Python when you 
 # use it. You will have to quit Python with CTRL- D (CTRL- Z on Windows) to be 
 # able to reload it.
